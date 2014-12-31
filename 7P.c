@@ -24,5 +24,6 @@ void * my_realloc(void *ptr, size_t newsize) {
     for (i = 0; i < size; i++) {
         result[i] = current[i];
     }
+    free(ptr);
     return newptr;
 }
